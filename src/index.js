@@ -11,11 +11,12 @@ import ReactDOM from "react-dom";
 
 const first = "Joe";
 const last = "Smith";
-const CURRENTYEAR = 2020;
+const currentYear = new Date().getFullYear();
+
 ReactDOM.render(
   <div>
     <p>Created by: {first} {last}</p>
-    <p>Copyright : {CURRENTYEAR} </p>
+    <p>Copyright : {currentYear} </p>
   </div>,
   document.getElementById("root")
 );
